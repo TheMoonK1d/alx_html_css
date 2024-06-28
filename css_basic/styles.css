@@ -19,3 +19,16 @@ aside {
 }
 footer {
 }
+
+@media screen and (max-width: 720px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    article {
+        flex: 1;
+    }
+    aside {
+        flex: 1;
+    }
+}
