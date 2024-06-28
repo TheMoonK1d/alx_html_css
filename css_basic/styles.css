@@ -12,14 +12,20 @@ main {
 article {
     flex: 2;
     overflow-y: auto;
+    border: solid 1px black;
+    background: black;
+    color: white;
 }
 aside {
     flex: 1;
     overflow-y: auto;
+    border: solid 1px black;
 }
 footer {
 }
-
+.logo {
+    font-size: 100px;
+}
 @media screen and (max-width: 720px) {
     main {
         display: flex;
