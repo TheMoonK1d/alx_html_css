@@ -64,6 +64,15 @@ nav ul li a {
     margin: 0;
 }
 
+.firstSection h2{
+    font-weight: 100;
+}
+
+.firstSection span{
+    font-weight: 900;
+    color: var(--primary);
+}
+
 .firstSection_div_one {
     display: flex;
     flex-direction: column;
@@ -206,13 +215,23 @@ blockquote {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 0px;
+}
+
+.fourthSection span{
+    font-weight: 900;
+    color: var(--primary);
+}
+
+.fourthSection h2{
+    font-family: 100;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .fourthSection_div{
     display: flex;
     flex-direction: row;
-    padding-top: 100px;
 }
 
 .fourthSection_card{
