@@ -1,0 +1,160 @@
+:root {
+    --primary: #ff6565;
+    --blue: #071629;
+}
+
+/* Icon font */
+@font-face {
+    font-family: "Icon";
+    src: url("./icon/fonts/holberton_school-icon.woff") format("woff");
+    font-style: normal;
+}
+
+/* Regular font */
+@font-face {
+    font-family: "Regular";
+    src: url("./font/SourceSansPro-Regular.otf") format("opentype");
+    font-style: normal;
+}
+
+/* Bold font */
+@font-face {
+    font-family: "Bold";
+    src: url("./font/SourceSansPro-Bold.otf") format("opentype");
+    font-weight: 700;
+}
+
+body {
+    background-image: url("./images/headphones_hero_1.jpg");
+    font-family: "Regular", sans-serif;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    padding-top: 10px;
+    width: 200px;
+}
+
+header {
+    padding: 10px 150px;
+}
+
+nav {
+    position: relative;
+}
+
+nav img {
+    width: 100%;
+}
+
+nav ul {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+li a:hover {
+    color: var(--primary);
+}
+
+.firstSection {
+    margin-top: 100px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.firstSection h1,
+.firstSection h5 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.firstSection h1 {
+    font-size: 30px;
+    font-family: "Bold", sans-serif;
+}
+
+.firstSection p {
+    width: 500px;
+    text-align: center;
+}
+
+.firstSection button {
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 100px;
+    border: none;
+    width: 150px;
+    background: var(--primary);
+    color: white;
+    font-family: "Bold";
+}
+
+.secondSection {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    color: var(--blue);
+}
+
+.secondSection h1,
+.secondSection p {
+    color: var(--blue);
+}
+
+.secondSection h1 {
+    font-family: "Bold", sans-serif;
+}
+
+.secondSection p {
+    width: 500px;
+    text-align: center;
+}
+
+.icn {
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+    color: var(--primary);
+    font-family: "Icon";
+}
+
+.secondSection_div{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.secondSection_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.secondSection_card p{
+    width: 200px;
+    font-size: 16px;
+}
