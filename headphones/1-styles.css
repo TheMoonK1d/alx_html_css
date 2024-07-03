@@ -24,52 +24,82 @@
     font-weight: 700;
 }
 
-* { margin: 0; padding: 0; }
+/* Light font */
+@font-face {
+    font-family: "Light";
+    src: url("./font/SourceSansPro-Light.otf") format("opentype");
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-image: url("./images/headphones_hero_1.jpg");
     font-family: "Regular", sans-serif;
     background-repeat: no-repeat;
+    transition: 0.5s ease;
 }
 
-.logo {
-    padding-top: 10px;
-    width: 200px;
+
+
+.navIcn {
+    font-family: "Icon";
 }
 
 header {
-    padding: 10px 150px;
+    padding: 0px 150px;
+    color: white;
 }
 
-nav {
-    position: relative;
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
-nav img {
-    width: 100%;
+.logo a {
+    text-decoration: none;
+    font-family: "Bold";
+
 }
 
-nav ul {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+
+.nav-links ul {
     list-style: none;
     display: flex;
-    gap: 20px;
-}
-
-nav ul li {
     margin: 0;
+    padding: 0;
 }
 
-nav ul li a {
-    color: white;
+.nav-links ul li {
+    margin-left: 20px;
+}
+
+.nav-links ul li a {
     text-decoration: none;
-    font-weight: 100;
+    color: white;
 }
 
-li a:hover {
-    color: var(--primary);
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+
+.nav-links ul li a :hover {
+    color: var(--primary)
 }
 
 .firstSection {
@@ -87,11 +117,11 @@ li a:hover {
     padding: 0;
     margin: 0;
     text-align: center;
+    font-family: "Bold", sans-serif;
 }
 
 .firstSection h1 {
     font-size: 30px;
-    font-family: "Bold", sans-serif;
 }
 
 .firstSection p {
@@ -100,7 +130,7 @@ li a:hover {
 }
 
 .firstSection button {
-    padding: 10px;
+    padding: 15px;
     margin-top: 50px;
     margin-bottom: 100px;
     border-radius: 100px;
@@ -111,8 +141,11 @@ li a:hover {
     font-family: "Bold";
 }
 
+.firstSection button:hover {
+    opacity: 0.9;
+}
+
 .secondSection {
-    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,6 +181,17 @@ li a:hover {
     display: flex;
     flex-direction: row;
     margin: 20px;
+    margin-bottom: 0px;
+}
+
+.secondSection_firstTwo {
+    display: flex;
+    flex-direction: row;
+}
+
+.secondSection_secondTwo {
+    display: flex;
+    flex-direction: row;
 }
 
 .secondSection_card {
@@ -172,25 +216,214 @@ li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+}
+
+.thirdSection h1 {
+    font-family: "Bold";
+    padding: 20px;
+}
+
+.thirdSection p {
+    padding: 20px;
+    text-align: center;
+    width: 600px;
 }
 
 .thirdSection_dev {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+}
+
+.thirdSection_firstTwo {
+    display: flex;
+    flex-direction: row;
+}
+
+.thirdSection_secondTwo {
+    display: flex;
+    flex-direction: row;
 }
 
 .pen {
-    height: 150px;
+    height: 140px;
 }
 
 .thirdSection_stack {
     display: grid;
     place-items: center;
     position: relative;
-    margin: 50px;
+    margin: 30px;
 }
 
 .thirdSection_stack_txt {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.thirdSection_stack_txt h1 {
+    font-size: 50px;
+    font-family: "Bold";
+    padding: 0;
+    margin: 0;
+}
+
+.thirdSection_stack_txt h3 {
+    font-size: 12px;
+    font-family: "Light";
+    padding: 0;
+    margin: 0;
+}
+
+.fourthSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+}
+
+input[type="submit"] {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 100px;
+    border: none;
+    width: 150px;
+    background: var(--primary);
+    color: white;
+    font-family: "Bold";
+}
+
+footer {
+    background-color: var(--blue);
+}
+
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+    i
+}
+
+.footerSection_div {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social_icn {
+    display: flex;
+    height: 5px;
+}
+
+hr {
+    width: 100%;
+    height: 60%;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    body {
+        height: 600px;
+        background-size: cover;
+        transition: 0.5s ease;
+    }
+
+    .firstSection {
+        margin: 10px 50px;
+        padding: 0;
+        padding-top: 100px;
+    }
+
+    .firstSection p {
+        padding: 0;
+        width: auto;
+    }
+
+    .secondSection_firstTwo {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondSection_secondTwo {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .thirdSection_firstTwo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thirdSection_secondTwo {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+@media (max-width: 776px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 10px 0;
+        text-align: center;
+        width: auto;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle:checked~.nav-links {
+        display: block;
+    }
 }
