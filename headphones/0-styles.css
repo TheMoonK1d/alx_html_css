@@ -134,29 +134,7 @@ header {
     opacity: 0.9;
 }
 
-.secondSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--blue);
-    margin: 50px;
-}
 
-.secondSection h1,
-.secondSection p {
-    color: var(--blue);
-}
-
-.secondSection h1 {
-    font-family: "Bold", sans-serif;
-    padding: 50px;
-}
-
-.secondSection p {
-    width: 500px;
-    text-align: center;
-}
 
 .icn {
     font-size: 100px;
@@ -166,35 +144,6 @@ header {
     font-family: "Icon";
 }
 
-.secondSection_div {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-    margin-bottom: 0px;
-}
-
-.secondSection_firstTwo {
-    display: flex;
-    flex-direction: row;
-}
-
-.secondSection_secondTwo {
-    display: flex;
-    flex-direction: row;
-}
-
-.secondSection_card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-}
-
-.secondSection_card p {
-    width: 200px;
-    font-size: 16px;
-}
 
 
 @media only screen and (max-width: 1280px) {
@@ -214,21 +163,6 @@ header {
         width: auto;
     }
 
-    .secondSection {
-        padding-top: 50px;
-    }
-
-    .secondSection_firstTwo {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .secondSection_secondTwo {
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 @media (max-width: 776px) {
@@ -247,11 +181,6 @@ header {
     .nav-links a {
         padding: 0.5rem 0;
     }
-    .nav-links a:hover {
-        color: var(--primary);
-        text-decoration: none;
-    }
-
     .nav-toggle:checked + .nav-toggle-label + .nav-links {
         display: flex;
     }
@@ -277,25 +206,7 @@ header {
     }
 
     .firstSection {
-        padding-top: 300px;
-    }
-
-    .secondSection {
-        padding-top: 50px;
-    }
-
-    .secondSection p {
-        width: 400px;
-    }
-
-    .secondSection_card p {
-        width: 200px;
-        padding-top: 15px;
-    }
-
-    .secondSection_div {
-        display: flex;
-        flex-direction: column;
+        padding-top: 200px;
     }
 }
 
@@ -310,7 +221,3 @@ header {
         padding-top: 50px;
     }
 }
-
-@media (max-width: 776px) {}
-
-@media (max-width: 776px) {}
